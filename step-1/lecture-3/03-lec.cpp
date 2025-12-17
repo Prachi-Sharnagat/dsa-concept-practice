@@ -5,7 +5,7 @@ using namespace std;
 void pairExplain(){
     pair<int,int> p ={1,6};
     cout << " explain pairs : ";
-    
+
     cout << p.first << p.second << endl;
     pair<int, pair<int,int>> s ={1,{3,4}};
     cout << s.first << s.second.first << s.second.second << endl;
@@ -355,18 +355,18 @@ void extraExplain(){
 }
 
 int main(){
-    pairExplain();
+    // pairExplain();ṇ
     vectorExplain();
-    listExplain();
-    dequeExplain();
-    stackExplain();
-    queueExplain();
-    priorityQueue();
-    setExplain();
-    multisetExplain();
-    unorderedExplain();
-    mapExplain();
-    extraExplain();
+    // listExplain();
+    // dequeExplain();
+    // stackExplain();
+    // queueExplain();
+    // priorityQueue();
+    // setExplain();
+    // multisetExplain();
+    // unorderedExplain();
+    // mapExplain();
+    // extraExplain();
     // size swap empty all are same in other too...
 
     return 0;

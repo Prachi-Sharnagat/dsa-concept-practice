@@ -157,7 +157,7 @@
 //            case 5 :
 //           cout << "fri";
 //         break;
-//            case 6 :
+//            case 6 :  
 //           cout << "sat";
 //         break;
 //            case 7 :
@@ -179,6 +179,7 @@
 //   int arr[5];
 //   cin >> arr[0] >> arr[1] >> arr[2];
 //   cout << arr[2] << "\n";
+//   cout << arr[5] << "\n";
 //   arr[1]+=10;
 //   cout << arr[1] <<endl;
 //   int array[3][5];
@@ -297,9 +298,9 @@
 //   cout << sum(first,second) << endl;
 //   cout << first <<"\n" << second;
 
-//   string s="prachu";
-//   change(s);
-//   cout << s;
+// //   string s="prachu";
+// //   change(s);
+// //   cout << s;
 //   return 0;
 // }
 
