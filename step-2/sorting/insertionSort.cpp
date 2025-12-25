@@ -2,9 +2,17 @@
 using namespace std;
 
 void insertionSort(int arr[], int size){
- 
-
   
+  for(int i=1; i<size; i++){
+    int j = i;
+    // if already sorted this will never run tc = o(n) in best case 
+    while(j>0 && arr[j-1]>arr[j]){
+      swap(arr[j-1], arr[j]);
+      j--;
+    }
+  } 
+  return;
+
 }
 
 int main(){

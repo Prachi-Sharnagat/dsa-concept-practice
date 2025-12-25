@@ -7,11 +7,12 @@ void bubbleSort(int arr[], int size){
     for(int j=0 ; j<=size-i-1; j++){
         if(arr[j]>arr[j+1]){
             swap(arr[j],arr[j+1]);
+            didSwap = 1;
         }
     }
-     if(didSwap=1){
+     if(didSwap==0){
             return ;
-        } // if already sorted order given then tc ==> o(1)
+        } // if already sorted order given then tc ==> o(n)
   }
   return ;
 }
