@@ -101,11 +101,20 @@ int DivisorPrint(int n){
 
 		}
 	}
-	//    sort(ls.begin(), ls.end());
+
+	// sort the list 
+	    vector<int> v;
+
+	for(auto list: ls){
+		v.push_back(list);
+	}
+
+	   sort(v.begin(), v.end());
+
 	
 //    vector<int>::iterator it = ls.begin();
 // o(no of factors)
-	for(auto val:ls){
+	for(auto val:v){
 		cout << val << " ";
 	}
 	// total time complexity = 
@@ -145,17 +154,17 @@ int gcd(int a, int b){
 int main(){
     int n;
     cin >> n;
-    int cnt = countNumber(n);
-    cout << cnt;
+    // int cnt = countNumber(n);
+    // cout << cnt;
 	 int a, b;
 	 cin >> a >> b;
-    reverseNumber(n);
-    reverseNumberAgain(n);
-	checkPalindrome(n);
-	armstrong(n);
-	printDivision(n);
-	DivisorPrint(n);
-	isPrime(n);
+    // reverseNumber(n);
+    // reverseNumberAgain(n);
+	// checkPalindrome(n);
+	// armstrong(n);
+	// printDivision(n);
+	// DivisorPrint(n);
+	// isPrime(n);
 	cout << gcd(a,b);
     return 0;
 }

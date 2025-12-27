@@ -33,7 +33,10 @@ void vectorExplain(){
     // dynamic in nature so we can increase the size
     //{1,2,3,4,5,6}
     p2.push_back(200);
+    cout << p2.size() << endl;
     cout << " explain vector : ";
+    // acess vector similar as array :
+    cout << p2[0] << p2[5] << endl;
 
     vector<int>::iterator it = v.begin();
     //1
@@ -43,10 +46,10 @@ void vectorExplain(){
     cout << *(it) << " ";
     it = it+2;
     // 3
-    cout << *(it) << " ";
+    cout << *(it) <<  endl;
     
     cout << v[0] << " ";
-    cout << v.back()<<" ";
+    cout << v.back()<<" "; // 6
     vector<int>::iterator it1 = v.end();
     // vector<int>::iterator it1 = v.rend();
     // vector<int>::iterator it1 = v.rbegin()
@@ -186,20 +189,28 @@ cout << pq2.top() <<endl;
 }
 
 void setExplain(){
-    cout << " explain set : ";
+    cout << " explain set : " << endl;
     set<int> st;
     st.insert(1);
     st.insert(12);
     st.insert(12);
     st.insert(16);
-    st.insert(3); // {1,3,12,16}
+    st.insert(3);
+     for( int x:st){
+        cout << x << endl;
+     }
+     cout << st.erase(12) << endl;
+     for( int x:st){
+        cout << x << endl;
+     }
+    // {1,3,12,16}
     auto it = st.find(3); // iterate till 3
     if(it!=st.end()){
-        cout << "found 3 : "<< *(it) << " ";
+        cout << "found 3 : "<< *(it) << endl;
     }
-    else{
-        cout << "not found";
-    }
+    // else{
+    //     cout << "not found";
+    // }
     it = st.find(100);
     if(it!=st.end()){
         cout << "found 100 : "<< *(it) << " ";
@@ -210,7 +221,7 @@ void setExplain(){
     // auto it = st.find(100); // iterate till back +1: st.end() : its not present here
     st.erase(3); // erase 3 then sort it again and rearrange
     int cnt = st.count(12);
-    cout << cnt <<  " ";
+    cout << cnt <<  endl;
     auto it1 = st.find(1);
     auto it2 = st.find(12);
     st.erase(it1,it2); //{1,16}
@@ -355,8 +366,8 @@ void extraExplain(){
 }
 
 int main(){
-    // pairExplain();ṇ
-    vectorExplain();
+    // pairExplain();
+    // vectorExplain();
     // listExplain();
     // dequeExplain();
     // stackExplain();
@@ -365,7 +376,7 @@ int main(){
     // setExplain();
     // multisetExplain();
     // unorderedExplain();
-    // mapExplain();
+       mapExplain();
     // extraExplain();
     // size swap empty all are same in other too...
 
