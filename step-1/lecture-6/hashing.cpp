@@ -43,7 +43,7 @@ int main(){
 
     // int hashh[13] = {0};
     for(int i=0; i<size; i++){
-        // hashh] +=1;
+        // [hashh] +=1;
     }
 
     int input;
